@@ -1,5 +1,8 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+game = FastAPI()
 
-app.get("/get_")
+
+@game.get("/get_full_data")
+def get_full_data():
+    return "Твоя функция"
